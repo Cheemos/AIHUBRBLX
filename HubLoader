@@ -2,7 +2,7 @@ local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singul
 
 -- Game IDs Here
 local scriptHub = {
-    [82681860618030] = { name = "Blob Eat Blob", url = "https://raw.githubusercontent.com/Cheemos/AIHUBRBLX/refs/heads/main/Blob%20Eat%20Blob.lua" },
+    [82681860618030] = { name = "Blob Eat Blob", url = "https://raw.githubusercontent.com/Cheemos/AIHUBRBLX/refs/heads/main/Scripts/BlobEatsBlob" },
 }
 
 
