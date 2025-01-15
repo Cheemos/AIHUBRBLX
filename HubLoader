@@ -1,0 +1,69 @@
+local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
+
+-- Game IDs Here
+local scriptHub = {
+    [82681860618030] = { name = "Blob Eat Blob", url = "https://raw.githubusercontent.com/Cheemos/AIHUBRBLX/refs/heads/main/Blob%20Eat%20Blob.lua" },
+}
+
+
+local gameId = game.PlaceId
+
+local window = engine.new({ text = "AI Script Hub", color = Color3.new(0.2, 0.4, 0.8) })
+window.open()
+
+local messageTab = window.new({ text = "Messages" })
+messageTab.show()
+
+
+local messageFolder = messageTab.new("folder", { text = "Loading", color = Color3.new(0.1, 0.6, 0.1) })
+messageFolder.open()
+
+
+local function loadScript(url)
+    local success, script = pcall(game.HttpGet, game, url)
+    if success then
+        loadstring(script)()
+        print("Successfully loaded script for this game!")
+    else
+        warn("Failed to load script: " .. tostring(script))
+    end
+end
+
+
+if scriptHub[gameId] then
+  
+    messageFolder.new("label", { text = "Thank you for using AI Script Hub!" })
+    messageFolder.new("label", { text = "Loading Script for: " .. scriptHub[gameId].name })
+
+ 
+    task.delay(2, function()
+        loadScript(scriptHub[gameId].url)
+
+       
+        local mainTab = window.new({ text = "Scripts" })
+        mainTab.show()
+
+      
+        local scriptFolder = mainTab.new("folder", { text = "Available Scripts", color = Color3.new(0.1, 0.6, 0.1) })
+        scriptFolder.open()
+
+        scriptFolder.new("label", { text = "Script loaded successfully for: " .. scriptHub[gameId].name })
+    end)
+else
+    
+    local fallbackTab = window.new({ text = "Scripts" })
+    fallbackTab.show()
+
+    local fallbackFolder = fallbackTab.new("folder", { text = "Available Scripts", color = Color3.new(0.1, 0.6, 0.1) })
+    fallbackFolder.open()
+
+    fallbackFolder.new("label", { text = "No script available for this game." })
+
+    for id, data in pairs(scriptHub) do
+        local button = fallbackFolder.new("button", { text = "Load Script for: " .. data.name })
+        button.event:Connect(function()
+            print("Loading script for: " .. data.name)
+            loadScript(data.url)
+        end)
+    end
+end
