@@ -1,3 +1,6 @@
+![Logo](https://github.com/Cheemos/PanHub/blob/main/Assets/Panhubtextlogo.png)
+
+
 ## Loadstring for Script
 To use the script, copy and paste the following loadstring into your Roblox script executor:
 
