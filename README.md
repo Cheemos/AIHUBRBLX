@@ -1,4 +1,6 @@
-![Logo](https://github.com/Cheemos/PanHub/blob/main/Assets/Panhubtextlogo.png)
+<p align="center">
+  <img src="https://github.com/Cheemos/PanHub/blob/main/Assets/Panhubtextlogo.png" alt="Logo" width="300">
+</p>
 
 
 ## Loadstring for Script
