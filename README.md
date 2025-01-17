@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Cheemos/PanHub/blob/main/Assets/Panhubtextlogo.png" alt="Logo" width="300">
+  <img src="https://github.com/Cheemos/PanHub/blob/main/Assets/Panhubtextlogo.png" alt="Logo" width="30">
 </p>
 
 
