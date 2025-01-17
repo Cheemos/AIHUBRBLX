@@ -8,7 +8,7 @@ local scriptHub = {
 
 local gameId = game.PlaceId
 
-local window = engine.new({ text = "AI Script Hub", color = Color3.new(0.2, 0.4, 0.8) })
+local window = engine.new({ text = "PanHub", color = Color3.new(0.2, 0.4, 0.8) })
 window.open()
 
 local scriptTab = window.new({ text = "Scripts" })
