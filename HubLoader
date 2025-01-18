@@ -5,7 +5,7 @@ local scriptHub = {
     [82681860618030] = { name = "Blob Eat Blob", url = "https://raw.githubusercontent.com/Cheemos/AIHUBRBLX/refs/heads/main/Scripts/BlobEatsBlob" },
     [122220249529691] = { name = "Anime Lootify", url = "https://raw.githubusercontent.com/Cheemos/AIHUBRBLX/refs/heads/main/Scripts/Anime%20Lootify" }, 
     [16498193900] = { name = "Lootify", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/Lootify" },
-    [18629053284] = { name = "Survival Odyssey", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/SurvivalOdyssey" }
+    [18629053284] = { name = "Survival Odyssey", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/SurvivalOdyssey" },
 
 }
 
