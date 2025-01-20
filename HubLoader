@@ -44,7 +44,7 @@ else
     availableScriptsFolder.new("label", { text = "No script available for this game." })
 
     for id, data in pairs(scriptHub) do
-        local button = availableScriptsFolder.new("button", { text = "Load Script for: " .. data.name })
+        local button = availableScriptsFolder.new("button", { text = .. data.name })
         button.event:Connect(function()
             print("Loading script for: " .. data.name)
             loadScript(data.url)
