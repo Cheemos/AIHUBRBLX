@@ -3,7 +3,7 @@ local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singul
 local Players = game:GetService("Players")
 local VirtualUser = game:GetService("VirtualUser")
 
-getgenv().afk_toggle = true -- Always enabled when script is executed
+getgenv().afk_toggle = true
 
 local LocalPlayer = Players.LocalPlayer
 if not LocalPlayer then
