@@ -47,3 +47,8 @@ else
         end)
     end
 end
+
+task.delay(5, function()
+    local discordInviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+    discordInviter.Join("https://discord.gg/JhNvSkcmZm")
+end)
