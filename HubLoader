@@ -1,3 +1,10 @@
+
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+Module.Prompt({ invite = "https://discord.gg/JhNvSkcmZm", name = "PanHub" }) -- name is optional
+
+Module.Join("https://discord.gg/JhNvSkcmZm")
+
 local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
 
 for i, v in pairs(getconnections(game:GetService("UserInputService").WindowFocusReleased)) do
