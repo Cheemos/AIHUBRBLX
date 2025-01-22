@@ -1,48 +1,5 @@
 local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
 
-for i, v in pairs(getconnections(game:GetService("UserInputService").WindowFocusReleased)) do
-v:Disable()
-end
-
-local Players = game:GetService("Players")
-local VirtualUser = game:GetService("VirtualUser")
-local status = getgenv().afk_toggle
-if status == nil then
-    getgenv().afk_toggle = false
-end
-local LocalPlayer = Players.LocalPlayer
-if not LocalPlayer then
-    error("Failed to get LocalPlayer reference")
-end
-LocalPlayer.Idled:Connect(function()
-    if not getgenv().afk_toggle then return end
-    pcall(function()
-        VirtualUser:CaptureController()
-        VirtualUser:ClickButton2(Vector2.new())
-    end)
-end)
-
-local Players = game:GetService("Players")
-local GC = getconnections or get_signal_cons
-
-if GC then
-    for i, v in pairs(GC(Players.LocalPlayer.Idled)) do
-        if v["Disable"] then
-            v["Disable"](v)
-        elseif v["Disconnect"] then
-            v["Disconnect"](v)
-        end
-    end
-else
-    local VirtualUser = cloneref(game:GetService("VirtualUser"))
-    Players.LocalPlayer.Idled:Connect(function()
-        VirtualUser:CaptureController()
-        VirtualUser:ClickButton2(Vector2.new())
-    end)
-end
-
-print("Anti Idle script is enabled")
-
 -- Game IDs
 local scriptHub = {
     [122220249529691] = { name = "Anime Lootify", url = "https://raw.githubusercontent.com/Cheemos/AIHUBRBLX/refs/heads/main/Scripts/Anime%20Lootify" }, 
