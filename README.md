@@ -9,8 +9,9 @@ To use the script, copy and paste the following loadstring into your Roblox scri
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/HubLoader"))()
 ```
-#Fabled Legacy
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/FabledLegacy"))()
+#Fabled Legacy#
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/FabledLegacy"))()
 ```
 ## Credits
 - **UI Framework**: [rbimgui-2](https://github.com/Singularity5490/rbimgui-2) by Singularity5490
