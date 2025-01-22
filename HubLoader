@@ -7,7 +7,6 @@ local scriptHub = {
     [18629053284] = { name = "Survival Odyssey", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/SurvivalOdyssey" },
     [17486343676] = { name = "Too Many Weapons", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/TooManyWeapons" },
     [116434053579571] = { name = "Mining GO!", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/Mining%20GO!" },
-    [11872917490] = { name = "Fabled Legacy", url = "https://raw.githubusercontent.com/Cheemos/PanHub/refs/heads/main/Scripts/FabledLegacy" },
 }
 
 local gameId = game.PlaceId
