@@ -1,3 +1,14 @@
+task.spawn(function()
+    local VirtualInputManager = game:GetService("VirtualInputManager")
+
+    while true do
+        wait(60)  -- Triggers every 60 seconds
+        VirtualInputManager:SendKeyEvent(true, "F13", false, game)  -- Press F13
+        wait(0.1)
+        VirtualInputManager:SendKeyEvent(false, "F13", false, game)  -- Release F13
+        print("Simulated F13 key press to prevent AFK.")
+    end
+end)
 
 local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
 
