@@ -2,11 +2,12 @@ local VirtualInputManager = game:GetService("VirtualInputManager")
 
 while true do
     wait(60) 
-    VirtualInputManager:SendKeyEvent(true, "W", false, game) 
-    wait(0.5)
-    VirtualInputManager:SendKeyEvent(false, "W", false, game) 
-    print("Simulated movement to prevent AFK.")
+    VirtualInputManager:SendKeyEvent(true, "F13", false, game) -- Presses an unused key
+    wait(0.1)
+    VirtualInputManager:SendKeyEvent(false, "F13", false, game) -- Releases the unused key
+    print("Simulated input to prevent AFK.")
 end
+
 
 local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
 
